@@ -1,1 +1,1 @@
-# JavaScript-Coding
+# Important Concepts of JavaScript Coding
