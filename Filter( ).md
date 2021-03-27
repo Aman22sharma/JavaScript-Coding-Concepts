@@ -1,0 +1,32 @@
+### filter() method creates a new array with all elements that pass the test implemented by the provided function.
+
+**Syntax**
+let newArray = arr.filter(callback(currentValue[, index[, array]]) {
+  // return element for newArray, if true
+}[, thisArg]);
+
+**Example 1**: Array.filter()
+
+    const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+    const result = words.filter(word => word.length > 6);
+
+    console.log(result);
+Output
+
+    Array ["exuberant", "destruction", "present"]
+
+
+**Example 2**: Filtering out all small values
+
+    function isBigEnough(value) {
+        return value >= 10
+    }
+
+    let filtered = [12, 5, 8, 130, 44].filter(isBigEnough)
+
+Output
+
+    filtered is [12, 130, 44]
+
+
